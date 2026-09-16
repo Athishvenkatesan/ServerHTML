@@ -5,20 +5,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sample Page</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       font-family: sans-serif;
-      max-width: 600px;
-      margin: 60px auto;
-      padding: 0 20px;
+      min-height: 100vh;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f2f4f3;
       color: #222;
+    }
+    .card {
+      background: #ffffff;
+      max-width: 480px;
+      width: 90%;
+      padding: 40px;
+      border-radius: 12px;
+      border: 1px solid #dde3e1;
+      text-align: center;
     }
     h1 {
       color: #007560;
+      margin-top: 0;
+    }
+    p {
+      color: #555;
+      line-height: 1.5;
+    }
+    button {
+      margin-top: 16px;
+      padding: 10px 24px;
+      background: #007560;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #00604e;
     }
   </style>
 </head>
 <body>
-  <h1>Hello, World!</h1>
-  <p>This is a simple sample HTML page.</p>
+  <div class="card">
+    <h1>Hello, World!</h1>
+    <p>This is a simple sample HTML page.</p>
+    <button onclick="alert('Thanks for clicking!')">Click me</button>
+  </div>
 </body>
 </html>
